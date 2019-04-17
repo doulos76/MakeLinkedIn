@@ -20,24 +20,25 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIl-RZ-cBw">
                                 <rect key="frame" x="147" y="388" width="120" height="120"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.25005534291267395" green="0.4509013295173645" blue="0.61178970336914062" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Rfx-lS-Hhb"/>
                                     <constraint firstAttribute="height" constant="120" id="kBT-6q-tSB"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86i-8a-ggm">
-                                <rect key="frame" x="175" y="403.5" width="64" height="89"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86i-8a-ggm">
+                                <rect key="frame" x="162" y="403" width="90" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="89" id="WCT-HS-Emk"/>
-                                    <constraint firstAttribute="width" constant="64" id="Zs4-IV-Hdp"/>
+                                    <constraint firstAttribute="height" constant="90" id="WCT-HS-Emk"/>
+                                    <constraint firstAttribute="width" constant="90" id="Zs4-IV-Hdp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="74"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.25005534291267395" green="0.4509013295173645" blue="0.61178970336914062" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.25005534291267395" green="0.4509013295173645" blue="0.61178970336914062" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ZIl-RZ-cBw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5x6-UY-KET"/>
                             <constraint firstItem="ZIl-RZ-cBw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TLj-GR-ELv"/>

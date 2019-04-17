@@ -37,7 +37,7 @@ class CareersController: UIViewController {
 
   let interestedCareersView: UIView = {
     let view = UIView()
-    view.backgroundColor = .blue
+    view.backgroundColor = .white
     return view
   }()
   
@@ -51,6 +51,7 @@ class CareersController: UIViewController {
     stackView.axis = .horizontal
     stackView.distribution = .fillEqually
     stackView.translatesAutoresizingMaskIntoConstraints = false
+    stackView.backgroundColor = .white
     return stackView
   }()
   
@@ -65,7 +66,7 @@ class CareersController: UIViewController {
   }
   
   fileprivate func setupViews() {
-//    view.addSubview(topCareersStackView)
+    view.addSubview(topCareersStackView)
       view.addSubview(collectionView)
     collectionView.dataSource = self
     collectionView.delegate = self
@@ -84,7 +85,7 @@ class CareersController: UIViewController {
     navigationItem.leftBarButtonItem?.tintColor = .white
     navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "iconMailChatt"), style: .plain, target: self, action: #selector(handleChattMenu))
     navigationItem.rightBarButtonItem?.tintColor = .white
-    
+
     navigationController?.navigationBar.addSubview(searchBar)
     guard let navBar = navigationController?.navigationBar else { return }
     searchBar.topAnchor.constraint(equalTo: navBar.topAnchor).isActive = true
@@ -96,7 +97,7 @@ class CareersController: UIViewController {
   @objc func handleUserMenu() {
     print("user menu touched")
   }
-  
+
   @objc func handleChattMenu() {
     print("chatt menu touched")
   }
@@ -110,7 +111,7 @@ extension CareersController: UICollectionViewDataSource, UICollectionViewDelegat
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-    cell.backgroundColor = .red
+    cell.backgroundColor = .yellow
     return cell
   }
   
@@ -122,8 +123,7 @@ extension CareersController: UICollectionViewDataSource, UICollectionViewDelegat
     if kind == UICollectionView.elementKindSectionHeader {
       let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
 //      headerView.backgroundColor = .green
-      headerView.addSubview(topCareersStackView)
-      
+      headerView.addSubview(interestedCareersView)
       return headerView
     }
     return UICollectionReusableView()

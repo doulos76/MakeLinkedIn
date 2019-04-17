@@ -32,13 +32,15 @@ class MainTabBarController: UITabBarController {
     ]
   }
   
-  fileprivate func templateNavController(image: UIImage, rootViewController: UIViewController) -> UINavigationController {
+  fileprivate func templateNavController(image: UIImage, rootViewController: UIViewController) -> CustomNavigationController {
     let viewController = rootViewController
-    let navController = UINavigationController(rootViewController: viewController)
+    let navController = CustomNavigationController(rootViewController: viewController)
     navController.navigationBar.barTintColor = UIColor(red: 8 / 255, green: 94 / 255, blue: 145 / 255, alpha: 1)
     navController.tabBarItem.image = image
-    tabBar.tintColor = UIColor(red: 8 / 255, green: 94 / 255, blue: 145 / 255, alpha: 1)
+    tabBar.tintColor = UIColor(red: 63 / 255, green: 116 / 255, blue: 156 / 255, alpha: 1)
     return navController
   }
+  
+  
   
 }
