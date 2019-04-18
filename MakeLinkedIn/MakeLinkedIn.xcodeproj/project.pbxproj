@@ -19,6 +19,8 @@
 		B533D6CB2266C7190064B74F /* NoticeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533D6CA2266C7190064B74F /* NoticeController.swift */; };
 		B533D6CD2266C7B10064B74F /* CareersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533D6CC2266C7B10064B74F /* CareersController.swift */; };
 		B533D6EF2266CB3D0064B74F /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533D6EE2266CB3D0064B74F /* CustomNavigationController.swift */; };
+		B55A31DC22693AC400159B27 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A31DB22693AC400159B27 /* Extension+UIColor.swift */; };
+		B55A31DE22693B0200159B27 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A31DD22693B0200159B27 /* Extension+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		B533D6CA2266C7190064B74F /* NoticeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeController.swift; sourceTree = "<group>"; };
 		B533D6CC2266C7B10064B74F /* CareersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareersController.swift; sourceTree = "<group>"; };
 		B533D6EE2266CB3D0064B74F /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		B55A31DB22693AC400159B27 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		B55A31DD22693B0200159B27 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 				B533D6F022671E500064B74F /* Model */,
 				B533D6F122671E580064B74F /* View */,
 				B533D6C72266C6AF0064B74F /* Controllers */,
+				B55A31DA22693A9F00159B27 /* Utilities */,
 				B533D6B32266C1A10064B74F /* Main.storyboard */,
 				B533D6B62266C1A20064B74F /* Assets.xcassets */,
 				B533D6B82266C1A20064B74F /* LaunchScreen.storyboard */,
@@ -107,6 +112,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B55A31DA22693A9F00159B27 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B55A31DB22693AC400159B27 /* Extension+UIColor.swift */,
+				B55A31DD22693B0200159B27 /* Extension+UIView.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B533D6C42266C50C0064B74F /* HomeController.swift in Sources */,
+				B55A31DC22693AC400159B27 /* Extension+UIColor.swift in Sources */,
 				B533D6B22266C1A10064B74F /* ViewController.swift in Sources */,
 				B533D6CB2266C7190064B74F /* NoticeController.swift in Sources */,
+				B55A31DE22693B0200159B27 /* Extension+UIView.swift in Sources */,
 				B533D6EF2266CB3D0064B74F /* CustomNavigationController.swift in Sources */,
 				B533D6CD2266C7B10064B74F /* CareersController.swift in Sources */,
 				B533D6C92266C6C60064B74F /* NewPostController.swift in Sources */,
